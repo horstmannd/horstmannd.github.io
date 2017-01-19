@@ -1,0 +1,31 @@
+/**************************************
+Image Styles
+**************************************/
+
+#showcase .portfolio-example img {
+	/*
+	Credit - Thanks to ConorLudy at
+	http://stackoverflow.com/questions/12980153/image-moves-on-hover-chrome-opacity-issue
+	for the below code. My image had been jumping on hover, but no longer.
+	*/
+	transform: translate3d(0px,0px,0px);
+	opacity: 1;
+	transition-duration: 1s;
+	float: left;
+}
+
+#showcase .portfolio-example img:hover {
+	opacity: .5;
+}
+
+.portfolio-example-image img {
+	margin-top: .6rem;
+}
+
+.bio img {
+	width: 50%;
+	max-width: 160px;
+	border-radius: 50%;
+	border: 4px solid lightgrey;
+	margin-bottom: 1rem;
+}

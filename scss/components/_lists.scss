@@ -1,0 +1,21 @@
+/**************************************
+List Styles
+**************************************/
+
+#main-nav li {
+	list-style: none;
+	display: inline-block;
+	margin: 0;
+	margin-bottom: .5rem;
+}
+
+#main-footer ul {
+	margin: 0;
+	padding: 0;
+	text-decoration: none;
+}
+
+#main-footer ul li {
+	display: inline-block;
+	padding: 0 1em;
+}

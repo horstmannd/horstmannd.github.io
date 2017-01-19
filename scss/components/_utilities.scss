@@ -1,0 +1,15 @@
+/**************************************
+Utilities
+**************************************/
+
+.clearfix::after {
+	content: "";
+	display: table;
+	clear: both;
+}
+
+
+
+.large-screen {
+	display: none;
+}

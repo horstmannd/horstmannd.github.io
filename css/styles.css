@@ -1,0 +1,298 @@
+/*************************************
+
+USE ANYWHERE
+
+*************************************/
+* {
+  box-sizing: border-box; }
+
+.clearfix::after {
+  content: "";
+  display: table;
+  clear: both; }
+
+img {
+  width: 100%; }
+
+.large-screen {
+  display: none; }
+
+a:link {
+  color: darkturquoise;
+  transition-duration: .3s;
+  transition-property: color; }
+
+a:active {
+  color: darkturquoise; }
+
+a:visited {
+  color: darkturquoise; }
+
+a:hover {
+  color: pink; }
+
+/*************************************
+
+HEADER
+
+*************************************/
+/* Header Styles */
+#main-header {
+  background-color: darkturquoise;
+  text-align: center; }
+
+h1.name {
+  margin: 0;
+  margin-bottom: 1rem;
+  font-size: 5rem; }
+
+h1.name span:nth-child(1) {
+  color: pink;
+  margin-left: -1rem; }
+
+/* Credit -
+Thanks to CSS Tricks - I wanted to create a line break in the h1
+and I got an idea based on this article:
+https://css-tricks.com/injecting-line-break/; */
+h1.name span:nth-child(2) {
+  display: block;
+  font-size: 1rem;
+  font-weight: normal;
+  margin-top: -.5rem; }
+
+/* Main Nav Styles */
+#main-nav {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  font-size: 1.2rem; }
+
+#main-nav li {
+  display: inline-block;
+  margin: 0;
+  margin-bottom: .5rem; }
+
+#main-nav a {
+  display: block;
+  padding: .3rem 2rem;
+  color: black;
+  text-decoration: none;
+  transition-duration: .3s;
+  transition-property: opacity, color; }
+
+#main-gray a:active {
+  color: pink; }
+
+#main-nav a:hover {
+  color: white; }
+
+#main-nav a.active {
+  color: white; }
+
+#main-nav a:first-child {
+  padding-left: 1rem; }
+
+#main-nav a:last-child {
+  padding-right: 1rem; }
+
+/*************************************
+
+CONTENT
+
+*************************************/
+#wrap {
+  min-height: calc(100vh - 35px);
+  /* (makes footer sticky) */ }
+
+#main-container {
+  max-width: 900px; }
+
+#page-title {
+  background-color: pink;
+  text-align: center;
+  font-family: 'Alegreya Sans', sans-serif; }
+
+#page-title h2 {
+  font-size: 1.5rem;
+  margin: .7rem 0 .3rem 0; }
+
+/* Showcase Portfolio */
+#showcase {
+  margin: 1rem 0;
+  margin-bottom: 0;
+  font-size: .8rem; }
+
+#showcase .portfolio-example {
+  position: relative;
+  display: inline-block;
+  margin: 0 0 1rem 0;
+  padding: 0;
+  vertical-align: top;
+  transition-duration: 1s;
+  transition-property: background-color; }
+
+#showcase .portfolio-example:hover {
+  background-color: black; }
+
+.portfolio-example span {
+  position: absolute;
+  left: .5rem;
+  bottom: .5rem;
+  line-height: 1.5rem;
+  background-color: black;
+  padding: .5rem;
+  margin: 0;
+  font-size: .8rem; }
+
+#showcase .portfolio-example a {
+  color: white;
+  transition-duration: 1s; }
+
+#showcase .portfolio-example a span:hover {
+  color: darkturquoise;
+  transition-duration: 1s; }
+
+#showcase .portfolio-example img {
+  /*
+  Credit - Thanks to ConorLudy at
+  http://stackoverflow.com/questions/12980153/image-moves-on-hover-chrome-opacity-issue
+  for the below code. My image had been jumping on hover, but no longer.
+  */
+  transform: translate3d(0px, 0px, 0px);
+  opacity: 1;
+  transition-duration: 1s;
+  float: left; }
+
+#showcase .portfolio-example img:hover {
+  opacity: .5; }
+
+/* Resume Styles */
+.resume-header {
+  border-bottom: 1px solid black; }
+
+.resume-header h3 {
+  font-weight: normal;
+  font-size: 1.1rem;
+  margin: 1rem 0 .5rem 0; }
+
+ul.work-entry,
+ul.education-entry,
+ul.online-learning-entry {
+  font-size: .9rem;
+  font-weight: bold;
+  list-style: none;
+  line-height: 1.3rem;
+  padding-left: 0;
+  padding-right: 1rem; }
+
+ul.work-entry ul,
+ul.education-entry ul,
+ul.online-learning-entry ul {
+  font-size: .8rem;
+  font-weight: normal;
+  list-style: none;
+  line-height: 1.3rem; }
+
+/* About, Contact, Portfolio Page Styles */
+.portfolio-example-image img {
+  margin-top: .6rem; }
+
+.features {
+  font-weight: bold; }
+
+.portfolio-example-description,
+#about,
+#contact {
+  padding: 1rem;
+  font-size: 1rem;
+  line-height: 1.4rem; }
+
+#contact {
+  text-align: center; }
+
+.bio {
+  text-align: center; }
+
+.bio img {
+  width: 50%;
+  max-width: 250px;
+  border-radius: 50%;
+  border: 4px solid lightgrey; }
+
+.contact-email {
+  text-align: center;
+  font-size: 1.3rem; }
+
+/*************************************
+
+FOOTER
+
+*************************************/
+#main-footer {
+  background-color: black;
+  padding: .5rem 0;
+  color: white;
+  font-size: .8em;
+  text-align: center; }
+
+#main-footer a:link {
+  text-decoration: none;
+  color: white;
+  transition-duration: .3s;
+  transition-property: color; }
+
+#main-footer a:active {
+  color: white; }
+
+#main-footer a:visited {
+  color: white; }
+
+#main-footer a:hover {
+  color: pink; }
+
+#main-footer ul {
+  margin: 0;
+  padding: 0;
+  text-decoration: none; }
+
+#main-footer ul li {
+  display: inline-block;
+  padding: 0 1em; }
+
+/*************************************
+
+MEDIA QUERIES
+
+*************************************/
+@media screen and (min-width: 481px) {
+  .small-screen {
+    display: none; }
+
+  .large-screen {
+    display: inline; } }
+@media screen and (min-width: 750px) {
+  #showcase {
+    text-align: left; }
+
+  .portfolio-example {
+    width: 47.1%; }
+
+  #showcase div:nth-child(even) {
+    margin-left: 5%; }
+
+  .small-screen {
+    display: none; }
+
+  .large-screen {
+    display: inline; }
+
+  .portfolio-example-image {
+    width: 100%;
+    display: inline-block;
+    vertical-align: top; }
+
+  .portfolio-example-description {
+    display: inline-block;
+    vertical-align: top; } }
+
+/*# sourceMappingURL=styles.css.map */
