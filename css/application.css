@@ -26,75 +26,6 @@ a:hover {
   color: pink; }
 
 /**************************************
-Container Styles
-**************************************/
-#wrap {
-  min-height: calc(100vh - 35px);
-  /* (makes footer sticky) */ }
-
-#main-nav {
-  margin: 0;
-  padding: 0;
-  font-size: 1.2rem; }
-
-#main-container {
-  max-width: 900px; }
-
-#page-title {
-  background-color: pink;
-  border-radius: 15px;
-  text-align: center;
-  font-family: 'Source Sans Pro', sans-serif;
-  text-shadow: 0px 1px 0px #ffe6ee; }
-
-#jumbo-about {
-  background-image: url("../img/aboutme.jpg"); }
-
-#showcase {
-  margin: 1rem 0;
-  margin-bottom: 0;
-  font-size: .8rem; }
-
-#showcase .portfolio-example {
-  position: relative;
-  display: inline-block;
-  margin: 0 0 1rem 0;
-  padding: 0;
-  vertical-align: top;
-  transition-duration: 1s;
-  transition-property: background-color; }
-
-#showcase .portfolio-example:hover {
-  background-color: black; }
-
-.portfolio-example span {
-  position: absolute;
-  left: .5rem;
-  bottom: .5rem;
-  line-height: 1.5rem;
-  background-color: black;
-  padding: .5rem;
-  margin: 0;
-  font-size: .8rem; }
-
-/**************************************
-Footer Styles
-**************************************/
-#main-footer {
-  background-color: black;
-  padding: .5rem 0;
-  color: white;
-  font-size: .8em;
-  text-align: center; }
-
-/**************************************
-Header
-**************************************/
-#main-header {
-  background-color: darkturquoise;
-  text-align: center; }
-
-/**************************************
 Utilities
 **************************************/
 .clearfix::after {
@@ -106,7 +37,17 @@ Utilities
   display: none; }
 
 /**************************************
-Typography Styles
+Container Styles
+**************************************/
+#wrap {
+  min-height: calc(100vh - 35px);
+  /* (makes footer sticky) */ }
+
+#main-container {
+  max-width: 900px; }
+
+/**************************************
+Header
 **************************************/
 h1.name {
   margin: 0;
@@ -134,67 +75,10 @@ h1.name span:nth-child(3) {
   font-weight: normal;
   margin-top: -.5rem; }
 
-#page-title h2 {
-  font-size: 1.5rem;
-  margin: .7rem 0 .3rem 0;
-  padding: 3px 0; }
-
-#jumbo-about p {
-  color: white;
-  text-shadow: 1px 1px 0 black;
-  font-size: 1.5rem; }
-
-.portfolio-example-description,
-#home,
-#about,
-#contact {
-  padding: 1rem;
-  font-size: 1rem;
-  line-height: 1.4rem; }
-
-#contact {
+#main-header {
+  background-color: darkturquoise;
   text-align: center; }
 
-.bio {
-  text-align: center; }
-
-.features {
-  font-weight: bold; }
-
-.contact-email {
-  text-align: center;
-  font-size: 1.3rem; }
-
-/**************************************
-Image Styles
-**************************************/
-#showcase .portfolio-example img {
-  /*
-  Credit - Thanks to ConorLudy at
-  http://stackoverflow.com/questions/12980153/image-moves-on-hover-chrome-opacity-issue
-  for the below code. My image had been jumping on hover, but no longer.
-  */
-  transform: translate3d(0px, 0px, 0px);
-  opacity: 1;
-  transition-duration: 1s;
-  float: left; }
-
-#showcase .portfolio-example img:hover {
-  opacity: .5; }
-
-.portfolio-example-image img {
-  margin-top: .6rem; }
-
-.bio img {
-  width: 50%;
-  max-width: 160px;
-  border-radius: 50%;
-  border: 4px solid lightgrey;
-  margin-bottom: 1rem; }
-
-/**************************************
-Link Styles
-**************************************/
 #main-header a span.first-initial,
 #main-header a span.description {
   color: black; }
@@ -230,6 +114,20 @@ Link Styles
 #main-header a:hover span.last-initial {
   color: pink; }
 
+/**************************************
+Nav
+**************************************/
+#main-nav {
+  margin: 0;
+  padding: 0;
+  font-size: 1.2rem; }
+
+#main-nav li {
+  list-style: none;
+  display: inline-block;
+  margin: 0;
+  margin-bottom: .5rem; }
+
 #main-nav a {
   display: block;
   padding: .2rem .7rem;
@@ -238,14 +136,49 @@ Link Styles
   transition-duration: .3s;
   transition-property: opacity, color; }
 
-#main-gray a:active {
-  color: pink; }
-
 #main-nav a:hover {
   color: white; }
 
 #main-nav li.active a {
   color: white; }
+
+/**************************************
+Main Content
+**************************************/
+#page-title {
+  background-color: pink;
+  border-radius: 15px;
+  text-align: center;
+  font-family: 'Source Sans Pro', sans-serif;
+  text-shadow: 0px 1px 0px #ffe6ee; }
+
+#page-title h2 {
+  font-size: 1.5rem;
+  margin: .7rem 0 .3rem 0;
+  padding: 3px 0; }
+
+.bio {
+  text-align: center; }
+
+.bio img {
+  width: 50%;
+  max-width: 160px;
+  border-radius: 50%;
+  border: 4px solid lightgrey;
+  margin-bottom: 1rem; }
+
+#jumbo-about {
+  background-image: url("../img/aboutme.jpg"); }
+
+#jumbo-about p {
+  color: white;
+  text-shadow: 1px 1px 0 black;
+  font-size: 1.5rem; }
+
+#showcase {
+  margin: 1rem 0;
+  margin-bottom: 0;
+  font-size: .8rem; }
 
 #showcase .portfolio-example a {
   color: white;
@@ -254,6 +187,82 @@ Link Styles
 #showcase .portfolio-example a span:hover {
   color: darkturquoise;
   transition-duration: 1s; }
+
+#showcase .portfolio-example img {
+  /*
+  Credit - Thanks to ConorLudy at
+  http://stackoverflow.com/questions/12980153/image-moves-on-hover-chrome-opacity-issue
+  for the below code. My image had been jumping on hover, but no longer.
+  */
+  transform: translate3d(0px, 0px, 0px);
+  opacity: 1;
+  transition-duration: 1s;
+  float: left; }
+
+#showcase .portfolio-example img:hover {
+  opacity: .5; }
+
+#showcase .portfolio-example {
+  position: relative;
+  display: inline-block;
+  margin: 0 0 1rem 0;
+  padding: 0;
+  vertical-align: top;
+  transition-duration: 1s;
+  transition-property: background-color; }
+
+#showcase .portfolio-example:hover {
+  background-color: black; }
+
+.portfolio-example-image img {
+  margin-top: .6rem; }
+
+.portfolio-example span {
+  position: absolute;
+  left: .5rem;
+  bottom: .5rem;
+  line-height: 1.5rem;
+  background-color: black;
+  padding: .5rem;
+  margin: 0;
+  font-size: .8rem; }
+
+.features {
+  font-weight: bold; }
+
+.portfolio-example-description,
+#home,
+#about,
+#contact {
+  padding: 1rem;
+  font-size: 1rem;
+  line-height: 1.4rem; }
+
+#contact {
+  text-align: center; }
+
+.contact-email {
+  text-align: center;
+  font-size: 1.3rem; }
+
+/**************************************
+Footer Styles
+**************************************/
+#main-footer {
+  background-color: black;
+  padding: .5rem 0;
+  color: white;
+  font-size: .8em;
+  text-align: center; }
+
+#main-footer ul {
+  margin: 0;
+  padding: 0;
+  text-decoration: none; }
+
+#main-footer ul li {
+  display: inline-block;
+  padding: 0 1em; }
 
 #main-footer a:link {
   text-decoration: none;
@@ -269,23 +278,5 @@ Link Styles
 
 #main-footer a:hover {
   color: pink; }
-
-/**************************************
-List Styles
-**************************************/
-#main-nav li {
-  list-style: none;
-  display: inline-block;
-  margin: 0;
-  margin-bottom: .5rem; }
-
-#main-footer ul {
-  margin: 0;
-  padding: 0;
-  text-decoration: none; }
-
-#main-footer ul li {
-  display: inline-block;
-  padding: 0 1em; }
 
 /*# sourceMappingURL=application.css.map */

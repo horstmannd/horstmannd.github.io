@@ -9,3 +9,33 @@ Footer Styles
 	font-size: .8em;
 	text-align: center;
 }
+
+#main-footer ul {
+	margin: 0;
+	padding: 0;
+	text-decoration: none;
+}
+
+#main-footer ul li {
+	display: inline-block;
+	padding: 0 1em;
+}
+
+#main-footer a:link {
+	text-decoration: none;
+	color: white;
+	transition-duration: .3s;
+	transition-property: color;
+}
+
+#main-footer a:active {
+	color: white;
+}
+
+#main-footer a:visited {
+	color: white;
+}
+
+#main-footer a:hover {
+	color: pink;
+}
