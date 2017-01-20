@@ -244,10 +244,6 @@ Link Styles
 #main-nav a:hover {
   color: white; }
 
-#main-nav li.active {
-  background-color: #00b0b3;
-  border-radius: 5px; }
-
 #main-nav li.active a {
   color: white; }
 
