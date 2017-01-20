@@ -19,7 +19,7 @@ description: > # this means to ignore newlines until "baseurl:"
   DH Dev & Design is the website of Dustin Horstmann, a designer and
   developer based in Minnesota.
 baseurl: "" # the subpath of your site, e.g. /blog
-url: "" # the base hostname & protocol for your site, e.g. http://example.com
+url: "http://dustinhorstmann.com" # the base hostname & protocol for your site, e.g. http://example.com
 twitter_username: HorstmannDustin
 github_username:  horstmannd
 
