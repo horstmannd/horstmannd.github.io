@@ -51,8 +51,8 @@ Container Styles
 Header
 **************************************/
 h1.name {
-  margin: 0;
-  margin-bottom: 1rem;
+  margin: 0 0 1em 0;
+  padding: 8px 0 0 0;
   font-size: 3rem;
   text-shadow: 1px 1px 0px pink; }
 
