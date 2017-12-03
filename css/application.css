@@ -26,6 +26,9 @@ a:visited {
 a:hover {
   color: pink; }
 
+li {
+  line-height: 1.7rem; }
+
 /**************************************
 Utilities
 **************************************/
@@ -41,7 +44,7 @@ Utilities
 Container Styles
 **************************************/
 #wrap {
-  min-height: calc(100vh - 35px);
+  min-height: calc(100vh - 70px);
   /* (makes footer sticky) */ }
 
 #main-container {
@@ -53,6 +56,7 @@ Header
 h1.name {
   margin: 0 0 1rem 0;
   padding: 8px 0 0 0;
+  font-family: 'Economica', sans-serif;
   font-size: 3rem;
   text-shadow: 1px 1px 0px pink; }
 
@@ -86,6 +90,15 @@ h1.name span:nth-child(3) {
 #main-header a:hover {
   color: black;
   text-decoration: none; }
+
+#main-nav a:link,
+#main-nav a:active,
+#main-nav a:visited {
+  color: #bcfeff;
+  text-decoration: none; }
+
+#main-nav a:hover {
+  color: #fff; }
 
 /**************************************
 Nav
@@ -122,7 +135,8 @@ Main Content
   background-color: pink;
   border-radius: 15px;
   text-align: center;
-  font-family: 'Source Sans Pro', sans-serif;
+  /*font-family: 'Source Sans Pro', sans-serif;*/
+  font-family: 'Roboto', sans-serif;
   text-shadow: 0px 1px 0px #ffe6ee; }
 
 #page-title h2 {
@@ -207,7 +221,8 @@ Main Content
 .portfolio-example-description,
 #home,
 #about,
-#contact {
+#contact,
+#content-writing {
   padding: 1rem;
   font-size: 1rem;
   line-height: 1.4rem; }
@@ -218,6 +233,43 @@ Main Content
 .contact-email {
   text-align: center;
   font-size: 1.3rem; }
+
+/* Resume */
+.resume h2 {
+  border-bottom: 2px solid #000;
+  margin: 1rem 0;
+  padding: 0 0 .5rem 0; }
+
+.resume ul.work-entry,
+.resume ul.education-entry,
+.resume ul.online-learning-entry {
+  font-size: 1rem;
+  font-weight: bold;
+  list-style: none;
+  line-height: 1.7rem;
+  padding-left: 0;
+  padding-right: 1rem; }
+
+.resume ul.work-entry ul,
+.resume ul.education-entry ul,
+.resume ul.online-learning-entry ul {
+  font-weight: normal;
+  list-style: none; }
+
+.resume a:link {
+  color: darkturquoise;
+  transition-duration: .3s;
+  transition-property: color;
+  text-decoration: none; }
+
+.resume a:active {
+  color: darkturquoise; }
+
+.resume a:visited {
+  color: darkturquoise; }
+
+.resume a:hover {
+  color: pink; }
 
 /**************************************
 Footer Styles
@@ -240,17 +292,34 @@ Footer Styles
 
 #main-footer a:link {
   text-decoration: none;
-  color: white;
+  color: #efefef;
   transition-duration: .3s;
   transition-property: color; }
 
 #main-footer a:active {
-  color: white; }
+  color: #efefef; }
 
 #main-footer a:visited {
-  color: white; }
+  color: #efefef; }
 
 #main-footer a:hover {
   color: pink; }
+
+#site-tech {
+  color: #666;
+  font-size: .8rem; }
+
+#main-footer #site-tech li {
+  padding: 0 .5em; }
+
+#site-tech a,
+#site-tech a:link,
+#site-tech a:active,
+#site-tech a:visited {
+  color: #888;
+  text-decoration: none; }
+
+#site-tech a:hover {
+  color: #ccc; }
 
 /*# sourceMappingURL=application.css.map */

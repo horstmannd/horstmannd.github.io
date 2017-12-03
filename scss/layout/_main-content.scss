@@ -6,7 +6,8 @@ Main Content
 	background-color: pink;
 	border-radius: 15px;
 	text-align: center;
-	font-family: 'Source Sans Pro', sans-serif;
+	/*font-family: 'Source Sans Pro', sans-serif;*/
+	font-family: 'Roboto', sans-serif;
 	text-shadow: 0px 1px 0px #ffe6ee;
 }
 
@@ -107,7 +108,8 @@ Main Content
 .portfolio-example-description,
 #home,
 #about,
-#contact {
+#contact,
+#content-writing {
 	padding: 1rem;
 	font-size: 1rem;
 	line-height: 1.4rem;
@@ -120,4 +122,49 @@ Main Content
 .contact-email {
 	text-align: center;
 	font-size: 1.3rem;
+}
+
+/* Resume */
+
+.resume h2 {
+	border-bottom: 2px solid #000;
+	margin: 1rem 0;
+	padding: 0 0 .5rem 0;
+}
+
+.resume ul.work-entry,
+.resume ul.education-entry,
+.resume ul.online-learning-entry {
+	font-size: 1rem;
+	font-weight: bold;
+	list-style: none;
+	line-height: 1.7rem;
+	padding-left: 0;
+	padding-right: 1rem;
+}
+
+.resume ul.work-entry ul,
+.resume ul.education-entry ul,
+.resume ul.online-learning-entry ul {
+	font-weight: normal;
+	list-style: none;
+}
+
+.resume a:link {
+	color: darkturquoise;
+	transition-duration: .3s;
+	transition-property: color;
+	text-decoration: none;
+}
+
+.resume a:active {
+	color: darkturquoise;
+}
+
+.resume a:visited {
+	color: darkturquoise;
+}
+
+.resume a:hover {
+	color: pink;
 }

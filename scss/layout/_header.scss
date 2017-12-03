@@ -3,54 +3,59 @@ Header
 **************************************/
 
 h1.name {
-	margin: 0;
-	margin-bottom: 1rem;
-	font-size: 5rem;
-	text-shadow: 1px 1px 0px pink;
+    margin: 0 0 1rem 0;
+    padding: 8px 0 0 0;
+    font-family: 'Economica', sans-serif;
+    font-size: 3rem;
+    text-shadow: 1px 1px 0px pink;
 }
 
 h1.name span.last-initial {
-	text-shadow: 1px 1px 0px black;
+    text-shadow: 1px 1px 0px black;
 }
 
 h1.name span.description {
-	text-shadow: none;
+    text-shadow: none;
 }
 
 h1.name span:nth-child(2) {
-	color: pink;
-	margin-left: -2rem;
+    color: pink;
+    margin-left: -2rem;
 }
+
 
 /* Credit -
 Thanks to CSS Tricks - I wanted to create a line break in the h1
 and I got an idea based on this article:
 https://css-tricks.com/injecting-line-break/; */
+
 h1.name span:nth-child(3) {
-	display: block;
-	font-size: 1rem;
-	font-weight: normal;
-	margin-top: -.5rem;
+    display: block;
+    font-size: 1rem;
+    font-weight: normal;
+    margin-top: -.5rem;
 }
 
 #main-header {
-	background-color: darkturquoise;
-	text-align: center;
+    background-color: darkturquoise;
+    text-align: center;
 }
 
-#main-header a span.first-initial,
-#main-header a span.description {color: black;}
-#main-header a:link span.first-initial,
-#main-header a span.description {color: black;}
-#main-header a:active span.first-initial,
-#main-header a span.description {color: black;}
-#main-header a:visited span.first-initial,
-#main-header a span.description {color: black;}
-#main-header a:hover span.first-initial,
-#main-header a span.description {color: black;}
+#main-header a:link,
+#main-header a:active,
+#main-header a:visited,
+#main-header a:hover {
+    color: black;
+    text-decoration: none;
+}
 
-#main-header a span.last-initial {color: pink;}
-#main-header a:link span.last-initial {color: pink;}
-#main-header a:active span.last-initial {color: pink;}
-#main-header a:visited span.last-initial {color: pink;}
-#main-header a:hover span.last-initial {color: pink;}
+#main-nav a:link,
+#main-nav a:active,
+#main-nav a:visited {
+    color: #bcfeff;
+    text-decoration: none;
+}
+
+#main-nav a:hover {
+  color: #fff;
+}

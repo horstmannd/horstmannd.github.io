@@ -23,19 +23,34 @@ Footer Styles
 
 #main-footer a:link {
 	text-decoration: none;
-	color: white;
+	color: #efefef;
 	transition-duration: .3s;
 	transition-property: color;
 }
 
 #main-footer a:active {
-	color: white;
+	color: #efefef;
 }
 
 #main-footer a:visited {
-	color: white;
+	color: #efefef;
 }
 
 #main-footer a:hover {
 	color: pink;
 }
+
+#site-tech {
+	color: #666;
+	font-size: .8rem;
+}
+
+#main-footer #site-tech li {
+	padding: 0 .5em;
+}
+
+#site-tech a,
+#site-tech a:link,
+#site-tech a:active,
+#site-tech a:visited { color: #888; text-decoration: none; }
+#site-tech a:hover { color: #ccc; }
